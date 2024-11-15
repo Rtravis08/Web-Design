@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trav page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f4f4f9;
+    }
+
+    .header {
+      background-color: #333a56;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-logo img{
+      max-height: 70px;
+      
+    }
+
+    .header-nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+    .image-placeholder {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;      
+    }
+
+    .image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .main-section {
+      background-color: #333a56;
+      color: white;
+      padding: 50px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .main-section .content {
+      max-width: 500px;
+    }
+
+    .main-section .content h1 {
+      font-size: 3.5em;
+    }
+
+    .main-section .content p {
+      font-size: 1em;
+      margin-top: 10px;
+      color: #b0b0b0;
+    }
+
+    .main-section .content .btn {
+      margin-top: 20px;
+      background-color: #4a90e2;
+      color: #F9FAF8;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .info-section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: 900;
+      color: #1F2937;
+    }
+
+    .info-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .info-box {
+      flex: 1;
+    }
+
+    .info-box img {
+      border: 3px solid #3b82f6;
+      border-radius: 8px;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 1rem;
+      
+
+    }
+
+    .info-box p {      
+      font-size: 0.9em;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .quote-section {
+      background-color: #E5E7EB;
+      padding: 30px;
+      text-align: center;
+      font-style: italic;
+      color: #1F2937;
+    }
+
+    .quote-section p {
+      max-width: 600px;
+      margin: auto;
+      background-color: #E5E7EB;
+      padding: 36px;
+      color: #1F2937;
+    }
+
+    .qs1{
+      text-align: center;
+      font-style: italic;      
+    }
+
+    .qs2{
+      text-align: right;
+      font-weight: bold;
+      margin-top: 10px;
+
+    }
+
+    .call-to-action {
+      background-color: #f4f4f9;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    .cta {
+      background-color: #4a90e2;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1000px; 
+      align-items: center;
+      display: flex;
+      justify-content: space-between;         
+    }
+
+    
+
+    .sign_up_btn .btn {
+      text-align: left;
+      color: #E5E7EB;
+      background-color: #4a90e2;
+      border: 2px solid #fff;
+    }
+
+    .sign_up_btn .btn:hover {
+      background-color: #4a90e2; 
+      color: #E5E7EB; 
+    }
+
+    .call-to-action p {
+      font-size: 1.2em;
+    }
+
+    .call-to-action .btn {
+      background-color: white;
+      color: #4a90e2;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background-color: #1F2937;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.8em;
+    }
+
+    @media (max-width: 1024px){
+      .info-boxes {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-nav a {
+        margin: 10px 5px;
+      }
+      .main-section{
+        flex-direction: column;
+        text-align: center;
+      }
+      .image-placeholder{
+        width: 100%;
+        max-width: 300px;
+      }
+      .info-boxes {
+        flex-direction: column;
+      }
+      .cta {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="header-logo">
+      <img src="istockphoto-1408605259-612x612.jpg" alt="Header logo">
+    </div>
+    <nav class="header-nav">
+      <a href="#">24872</a>
+      <a href="#">Isingizwe</a>
+      <a href="#">Rutareka</a>
+      <a href="#">Travis</a>
+    </nav>
+  </header>
+
+  
+  <section class="main-section">
+    <div class="content">
+      <h1>The Home Of Cars</h1><br>
+      <p>A home for car enthusiasts and creativity. Sharing the passion and the love for cars. You can Join us and share the love and passion for Cars. </p><br>
+      <p><a href="#" class="btn">Sign up</a></p>
+    </div>
+    <div class="image-placeholder">
+      <img src="cars.png" alt="Home image">
+    </div>
+  </section>
+`
+  
+  <section class="info-section">
+    <h2>| Our Gallery |</h2>
+    <div class="info-boxes">
+      <div class="info-box">
+        <img src="bmw.jfif" alt="Image description">
+        <p>"Adventure Awaits"</p>
+      </div>
+      <div class="info-box">
+        <img src="ferrari f40 japan.jfif" alt="Image description">
+        <p>"Life in the Fast Lane"</p>
+      </div>
+      <div class="info-box">
+        <img src="bmw.jfif" alt="Image description">
+        <p>"Luxury in Motion"</p>
+      </div>
+      <div class="info-box">
+        <img src="car5.jfif" alt="Image description">
+        <p>"Ignite Your Journey"</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="quote-section">
+    <p class="qs1">"If you own a classic British car, you don’t own a car – you own an adventure. Every day is a gamble. Will it start? Will the lights work? Will it get me home, or will I need a tow truck? It’s a bit like adopting a lion. You love it, you respect it, but you know it could eat you at any time."</p>
+    <p class="qs2">-Jeremy Clarkson.</p>
+  </section>
+
+  
+  <section class="call-to-action">
+    <div class="cta">
+      <div class="cta-text">
+        <h1>What are you Waiting For?</h1>
+        <p>Sign up to join our club by clicking that button right over there!</p>
+      </div>
+      <div class="sign_up_btn">
+        <a href="#" target="_blank" class="btn">Sign up</a>
+      </div>
+    </div>
+            
+
+    </div>
+    
+  </section>
+
+  
+  <footer class="footer">
+    <p>Copyright © Travis 2024</p>
+  </footer>
+
+</body>
+</html>
